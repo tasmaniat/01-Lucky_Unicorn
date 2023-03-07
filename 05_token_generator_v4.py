@@ -19,7 +19,7 @@ for items in range(0, 100):
     # if the random # is between 6 and 36
     # user gets a donkey (subtract $1 from balance)
     elif 6 <= chosen_num <= 36:
-        chosen == "donkey"
+        chosen = "donkey"
         balance -= 1
 
     # The token is either a horse or zebra...
@@ -27,7 +27,7 @@ for items in range(0, 100):
     else:
         # if the number is even, set the chosen
         # item to a horse
-        if chosen_num / 2 == 0:
+        if chosen_num % 2 == 0:
             chosen = "horse"
 
         # otherwise set it to zebra
