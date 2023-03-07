@@ -37,14 +37,13 @@ while play_again == "":
         # item to a horse
         if chosen_num % 2 == 0:
             chosen = "horse"
-
         # otherwise set it to zebra
         else:
             chosen = "zebra"
         balance -= 0.5
 
-    print("You got a {}. Your balance is "
-          "${:.2f)".format(chosen, balance))
+    print("you get a {}.   Your balance is"
+          "${:.2f}".format(chosen, balance))
 
     if balance < 1:
         # if balance is low, exit the game and
