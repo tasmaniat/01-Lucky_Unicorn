@@ -139,5 +139,6 @@ while play_again == "":
 
 
 print()
-print("Final balance", balance)
+
+print(f'Final Balance ${balance:.2f}')
 print("Thank you for playing")
